@@ -22,11 +22,13 @@
 // DEALINGS IN THE SOFTWARE.
 
 var path = require("path"),
-	temp = require("temp").track();
+  temp = require("temp").track();
 
 var tmpdir = temp.mkdirSync("zerorpc-nodejs");
 var next_id = 0;
 
 exports.random_ipc_endpoint = function() {
-	return 'ipc://' + path.join(tmpdir, (next_id++).toString() + '.ipc');
-}
+  return process.platform === "win32"
+    ? `tcp://127.0.0.1:${Math.ceil(Math.random()*48128) + 1023}`
+    : "ipc://" + path.join(tmpdir, (next_id++).toString() + ".ipc");
+};
