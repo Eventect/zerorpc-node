@@ -2,9 +2,13 @@
   "name": "zerorpc",
   "version": "0.9.9-beta.1",
   "main": "./index.js",
-  "author": "François-Xavier Bourlet <bombela+zerorpc@gmail.com>",
+  "author": "Takeshi (Kesh) Ikuma <tikuma@gmail.com>",
   "description": "A port of ZeroRPC to node.js",
   "contributors": [
+    {
+      "name": "Takeshi (Kesh) Ikuma",
+      "email": "tikuma@gmail.com"
+    },
     {
       "name": "Francois-Xavier Bourlet",
       "email": "bombela@gmail.com"
@@ -21,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/0rpc/zerorpc-node"
+    "url": "https://github.com/hokiedsp/zerorpc-node"
   },
   "keywords": [
     "zerorpc",
