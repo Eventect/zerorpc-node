@@ -15,7 +15,9 @@
     }
   ],
   "scripts": {
-    "test": "./node_modules/.bin/nodeunit test"
+    "test": "nodeunit test",
+    "example_server":  "node examples/server.js",
+    "example_client":  "node examples/client.js"
   },
   "repository": {
     "type": "git",
